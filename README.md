@@ -62,6 +62,19 @@ const pool = mysql.createPool(
     > port 번호를 설정하고 localhost:3000/ 이후의 페이지를 설정합니다.
 6. 모든 설정 이후, npm run start 명령어 실행
 
+## Employee
+Fname|Minit|Lname|Ssn|Bdata|Address|Sex|Salary|Super_ssn|Dno|   
+---|---|---|---|---|---|---|---|---|---|    
+Chulsoo|F|Lim|333333555|1990-02-13|대전광역시|M|3500|123123123|2|
+
+<br>
+
+## Department
+Dname|Dnumber|Mgr_ssn|Mgr_start_date|
+---|---|---|---|
+경영부|1|123123123|1998-02-13|
+
+<br>
 
 <pre>
 <code>
@@ -151,6 +164,16 @@ app.use('/select',selectRouter); //각 이름을 자유롭게 지어준 것이�
 7. routes/select.js에서 데이터 show를 구현합니다.
     >views/select.hbs에 연결합니다.
 9. 모든 설정 이후, npm run start 명령어 실행
+
+## user
+ID|Password|Role|
+---|---|---|
+nation|nation1234|대통령|
+
+## Nation
+Name|Capital|
+---|---|
+대한민국|서울|
 
 
 <pre>
