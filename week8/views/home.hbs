@@ -1,0 +1,73 @@
+<h1>Employee 데이터 삽입</h1>   <!--타이틀을 설정 한 것-->
+
+<form name="employee" method="post" action='/'>     <!--폼의 이름과 method, action(home으로 넘겨줌)을 설정 -->
+    <div>                                           <!--action은 데이터를 어떤 페이지에 넘겨 줄 것인지를 설정 -->
+        <label for="fname">Fname</label>              <!--아래는 모두 id, name, type을 설정하고-->
+        <input id="fname" name="fname" type="text" required placeholder="Fname">
+    </div>                                          <!--required는 꼭 입력되어야 하는 값 입니다.-->
+    <div>                                           <!--placeholder는 해당 자리에 어떤 값이 들어가는지 미리보기로 알려주는 것입니다.-->
+        <label for="minit">Minit</label>
+        <input id="minit" name="minit" type="text"  placeholder="Minit">
+    </div>
+    <div>
+        <label for="lname">Lname</label>
+        <input id="lname" name="lname" type="text" required placeholder="Lname">
+    </div>
+    <div>
+        <label for="ssn">Ssn</label>
+        <input id="ssn" name="ssn" type="text" placeholder="Ssn">
+    </div>
+    <div>
+        <label for="bdate">Bdate</label>
+        <input id="bdate" name="bdate" type="text" placeholder="Bdate">
+    </div>
+    <div>
+        <label for="address">Address</label>
+        <input id="address" name="address" type="text" placeholder="Address">
+    </div>
+    <div>
+        <label for="sex">Sex</label>
+        <input id="sex" name="sex" type="text" placeholder="Sex">
+    </div>
+    <div>
+        <label for="salary">Salary</label>
+        <input id="salary" name="salary" type="text" placeholder="Salary">
+    </div>
+    <div>
+        <label for="super_ssn">Super_ssn</label>
+        <input id="super_ssn" name="super_ssn" type="text" placeholder="Super_ssn">
+    </div>
+    <div>
+        <label for="dno">Dno</label>
+        <input id="dno" name="dno" type="text" placeholder="Dno">
+    </div>
+    <div>
+        <input type="submit" value="삽입">      <!--삽입 텍스트를 갖고 있는 submit 버튼을 생성합니다.-->
+    </div>
+</form>
+
+<br><br>
+
+<h1>Department 데이터 삽입</h1>
+<form id="department" method="post" action='/'> <!--action은 데이터를 어떤 페이지에 넘겨 줄 것인지를 설정 -->
+    <div>                                       <!--이때의 method는 post이름을 붙입니다.-->
+        <label for="dname">Dname</label>
+        <input id="dname" name="dname" type="text" required placeholder="Dname">
+    </div>
+    <div>
+        <label for="dnumber">Dnumber</label>
+        <input id="dnumber" name="dnumber" type="text" placeholder="Dnumber">
+    </div>
+    <div>
+        <label for="mgr_ssn">Mgr_ssn</label>
+        <input id="mgr_ssn" name="mgr_ssn" type="text" required placeholder="Mgr_ssn">
+    </div>
+    <div>
+        <label for="mgr_start_date">Mgr_start_date</label>
+        <input id="mgr_start_date" name="mgr_start_date" type="text" required placeholder="Mgr_start_date">
+    </div>
+    <div>
+        <input type="submit" value="삽입">  <!--삽입 텍스트를 갖고 있는 submit 버튼을 생성합니다.-->
+    </div>
+</form>
+<!-- 이 안에 입력된 데이터는 home.js에서 처리하게 됩니다.-->

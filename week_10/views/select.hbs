@@ -1,0 +1,29 @@
+<h1>{{ title1 }}</h1>
+
+<table>
+    <tr>
+        <td>Dname</td>
+        <td>Dnumber</td>
+    </tr>
+    {{#each department}}    <!-- department 데이터를 반복하겠다는 의미입니다.-->
+    <tr>                    <!--department의 데이터가 있을 때 마다 행을 하나씩 추가하도록 합니다.-->
+        <td>{{Dname}}</td>  <!--js 파일에서 값을 넘겨 받을 때 반복하는 것입니다.-->
+        <td>{{Dnumber}}</td>
+    </tr>
+    {{/each}}
+</table>
+<tr></tr>
+
+<h1>{{ title2 }}</h1>
+<table>
+    <tr>
+        <td>Name</td>
+        <td>Capital</td>
+    </tr>
+    {{#each nation}}    <!-- department 데이터를 반복하겠다는 의미입니다.-->
+    <tr>                    <!--department의 데이터가 있을 때 마다 행을 하나씩 추가하도록 합니다.-->
+        <td>{{Name}}</td>  <!--js 파일에서 값을 넘겨 받을 때 반복하는 것입니다.-->
+        <td>{{Capital}}</td>
+    </tr>
+    {{/each}}
+</table>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>12171841 임재형</title>
+            <meta charset="UTF-8" />
+        </head>
+
+    <body>
+        <h1>Random Number Game</h1>
+        <div>
+            <h3 class="js-title">Generate a number between 0 and <span></span></h3>
+            <datalist id="number">
+                <option value="50"></option>
+                <option value="100"></option>
+                <option value="150"></option>
+                <option value="200"></option>
+            </datalist>
+            <input
+            list="number"
+            id="js-range"
+            type="range"
+            min="0"
+            max="200"
+            value="1"
+            step="1"
+            />
+        </div>
+        <form id="js-guess">
+            <label>Guess the number:</label>
+            <input id="pick" type="number" max="200" min="0" />
+            <button>Play!</button>
+            <!-- <input type="submit" value="Play"> -->
+        </form>
+        <div id="js-result">
+            <span></span> <!--이곳에 넘겨받겠다는 의미-->
+        </div>
+        <script src="./homework.js"></script>
+    </body>
+    </html> 

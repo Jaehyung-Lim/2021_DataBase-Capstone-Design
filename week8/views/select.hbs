@@ -1,0 +1,49 @@
+<h1>{{ title }}</h1> <!--직원 타이틀 -->
+
+<table>
+    <tr>    <!--행을 의미합니다. 즉 한 행에 아래의 내용을 넣겠다는 것 입니다.--> 
+        <td>Fname</td> <!--열을 의미합니다. -->
+        <td>Minit</td> <!-- 즉 한 열에는 하나의 필드만 해당합니다.-->
+        <td>Lname</td> <!--각 필드의 이름은 <td></td> 사이에 있는 것입니다.-->
+        <td>Ssn</td>
+        <td>Bdate</td>
+        <td>Address</td>
+        <td>Sex</td>
+        <td>Salary</td>
+        <td>Super_ssn</td>
+        <td>Dno</td>
+    </tr>
+    {{#each employee}}  <!-- 이제 행, 열에 대응하여 값을 넣어야 하므로 이를 사용합니다.-->
+    <tr>                <!-- 데이터가 있을 떄 마다 행을 하나씩 추가하도록 합니다.-->
+        <td>{{Fname}}</td> <!--employee 데이터들을 반복하겠다는 것입니다. -->
+        <td>{{Minit}}</td> <!--모두 js 파일에서 값을 넘겨 받을때 반복하는 것입니다. -->
+        <td>{{Lname}}</td>
+        <td>{{Ssn}}</td>
+        <td>{{Bdate}}</td>
+        <td>{{Address}}</td>
+        <td>{{Sex}}</td>
+        <td>{{Salary}}</td>
+        <td>{{Super_ssn}}</td>
+        <td>{{Dno}}</td>
+    </tr>
+    {{/each}}
+</table>
+
+<h1>{{ title2 }}</h1>
+
+<table>
+    <tr>
+        <td>Dname</td>
+        <td>Dnumber</td>
+        <td>Mgr_ssn</td>
+        <td>Mgr_start_date</td>
+    </tr>
+    {{#each department}}    <!-- department 데이터를 반복하겠다는 의미입니다.-->
+    <tr>                    <!--department의 데이터가 있을 때 마다 행을 하나씩 추가하도록 합니다.-->
+        <td>{{Dname}}</td>  <!--js 파일에서 값을 넘겨 받을 때 반복하는 것입니다.-->
+        <td>{{Dnumber}}</td>
+        <td>{{Mgr_ssn}}</td>
+        <td>{{Mgr_start_date}}</td>
+    </tr>
+    {{/each}}
+</table>
